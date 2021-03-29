@@ -1,5 +1,5 @@
 <?php
-
+// test
 // from: https://stackoverflow.com/questions/14912943/how-to-print-current-url-path
 // securely output/print filepath on a server
 function get_current_url($strip = true) {
