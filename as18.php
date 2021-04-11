@@ -16,7 +16,7 @@ function main () {
        array_push($arr2, $i->TotalDeaths) ;
         
     }
-    array_multisort($arr2, $arr1);
+    array_multisort($arr2, SORT_DESC, $arr1);
     print_r($arr1);
 }
 
