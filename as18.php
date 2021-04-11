@@ -1,5 +1,5 @@
 <?php
-echo "<a  target='_blank' href= 'https://github.com/Chubomber/upload/blob/master/as18.php'>github api.php</a>";
+echo "<a  target='_blank' href= 'https://github.com/Chubomber/upload/blob/master/as18.php'>github api.php</a> <br>";
 // death data of covid 19
 main();
 
