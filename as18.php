@@ -11,7 +11,7 @@ function main () {
 
     //$deaths_arr = Array();
     foreach($obj->Countries as $i){
-        echo = $i->Country . " : "
+        echo  $i->Country . " : "
         . $i->TotalDeaths
         ."<br>";
     }
