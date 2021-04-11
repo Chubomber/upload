@@ -9,12 +9,15 @@ function main () {
 	$json_string = curl_get_contents($apiCall);
 	$obj = json_decode($json_string);
 
-    $deaths_arr = Array();
+   $arr1 = Array();
+   $arr2 = Array();
     foreach($obj->Countries as $i){
-        array_push($deaths_arr, [$i->Country, $i->TotalDeaths]);
+        array_push($arr1, $i->Country);
+       array_push($arr2, $i->TotalDeaths) ;
         
     }
-    print_r($deaths_arr);
+    array_multisort($arr2, $arr1);
+    print_r($arr1);
 }
 
 
