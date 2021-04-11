@@ -14,7 +14,7 @@ function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      country_usa = JSON.parse(this.responseText).Countries[181].Totaldeaths;
+      country_usa = JSON.parse(this.responseText).Countries[170].NewDeaths;
 	 // country_usa = JSON.parse(this.responseText).Global.NewConfirmed;
 	  country_1 = JSON.parse(this.responseText).Countries[0].Country;
 	 junk = JSON.parse(this.responseText).Countries;
