@@ -9,13 +9,12 @@ function main () {
 	$json_string = curl_get_contents($apiCall);
 	$obj = json_decode($json_string);
 
-    //$deaths_arr = Array();
+    $deaths_arr = Array();
     foreach($obj->Countries as $i){
-        echo  $i->Country . " : "
-        . $i->TotalDeaths
-        ."<br>";
+        array_push($deaths_arr, [$i->Country, $i->TotalDeaths]);
+        
     }
-
+    print_r($deaths_arr);
 }
 
 
