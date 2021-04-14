@@ -1,6 +1,33 @@
+<html>
+    <body>
 <?php
 echo "<a  target='_blank' href= 'https://github.com/Chubomber/upload/blob/master/as18.php'>github api.php</a> <br>";
 // death data of covid 19
+$str= "{";
+    $country1 = "USA";
+    $country2 = "China";
+    $pop1 = 3000000;
+    $pop2 = 20000000;
+
+    $str = $str . '"';
+    $str = $str . $country1;
+    $str = $str . '"';
+    $str = $str . ";";
+    $str = $str . $pop1;
+    $str = $str . ",";
+    
+
+    $str = $str . '"';
+    $str = $str . $country2;
+    $str = $str . '"';
+    $str = $str . ";";
+    $str = $str . $pop2;
+
+
+    $str= $str . "}";
+    echo $str;
+   $j = json_decode ($str);
+   echo $j->USA;
 main();
 
 function main () {
@@ -33,4 +60,7 @@ function curl_get_contents($url) {
     $data = curl_exec($ch);
     curl_close($ch);
     return $data;
+   ?>
+   </body>
+   </html>
 }
