@@ -3,19 +3,7 @@
 <?php
 echo "<a  target='_blank' href= 'https://github.com/Chubomber/upload/blob/master/as18.php'>github api.php</a> <br>";
 // death data of covid 19
-echo "<table>";
 
-echo "<tr>";
-echo"<th>Country</th>";
-echo "<th>Number of deaths</th>";
-echo "</tr>";
-for ($i = 0;$i<10; i++){
-    echo "<tr>";
-    echo "<td>" . $arr1[$i] . "</td>";
-    echo "<td>" . $arr2[$i] . "</td>";
-    echo "</tr>";
-};
-echo "</table>";
 main();
 
 function main () {
@@ -34,6 +22,20 @@ function main () {
     array_multisort($arr2, SORT_DESC, $arr1);
     echo $arr1[0] . ", ",$arr1[1] . ", ",$arr1[2] . ", ",$arr1[3] . ", ",$arr1[4] . ", ",$arr1[5] . ", ",
 	$arr1[6] . ", ",$arr1[7] . ", ",$arr1[8] . ", ",$arr1[9];
+
+    echo "<table>";
+
+echo "<tr>";
+echo"<th>Country</th>";
+echo "<th>Number of deaths</th>";
+echo "</tr>";
+for ($i = 0;$i<10; $i++){
+    echo "<tr>";
+    echo "<td>" . $arr1[$i] . "</td>";
+    echo "<td>" . $arr2[$i] . "</td>";
+    echo "</tr>";
+};
+echo "</table>";
 }
 
 
